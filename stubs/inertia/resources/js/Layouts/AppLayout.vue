@@ -42,7 +42,7 @@
                                     <template #content>
                                         <div class="w-60">
                                             <!-- Company Management -->
-                                            <template v-if="$page.props.jetstream.hasCompanyFeatures">
+                                            <template v-if="$page.props.jetstream.hasCompanyFeatures && $page.props.user.current_company_id!=null">
                                                 <div class="block px-4 py-2 text-xs text-gray-400">
                                                     Manage Company
                                                 </div>
@@ -175,7 +175,7 @@
                             </form>
 
                             <!-- Company Management -->
-                            <template v-if="$page.props.jetstream.hasCompanyFeatures">
+                            <template v-if="$page.props.jetstream.hasCompanyFeatures && $page.props.user.current_company_id!=null">
                                 <div class="border-t border-gray-200"></div>
 
                                 <div class="block px-4 py-2 text-xs text-gray-400">

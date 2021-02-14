@@ -29,7 +29,6 @@ class CreateCompany implements CreatesCompanies
 
         $user->switchCompany($company = $user->ownedCompanies()->create([
             'name' => $input['name'],
-            'personal_company' => false,
         ]));
 
         return $company;

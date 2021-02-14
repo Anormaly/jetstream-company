@@ -28,7 +28,6 @@ class Company extends JetstreamCompany
      */
     protected $fillable = [
         'name',
-        'personal_company',
     ];
 
     /**

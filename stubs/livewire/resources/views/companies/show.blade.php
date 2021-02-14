@@ -11,7 +11,7 @@
 
             @livewire('companies.company-member-manager', ['company' => $company])
 
-            @if (Gate::check('delete', $company) && ! $company->personal_company)
+            @if (Gate::check('delete', $company))
                 <x-jet-section-border />
 
                 <div class="mt-10 sm:mt-0">

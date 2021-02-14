@@ -35,7 +35,7 @@ class CreateNewUser implements CreatesNewUsers
                 'email' => $input['email'],
                 'password' => Hash::make($input['password']),
             ]), function (User $user) {
-                $this->createCompany($user);
+                /*$this->createCompany($user);*/
             });
         });
     }
@@ -51,7 +51,6 @@ class CreateNewUser implements CreatesNewUsers
         $user->ownedCompanies()->save(Company::forceCreate([
             'user_id' => $user->id,
             'name' => explode(' ', $user->name, 2)[0]."'s Company",
-            'personal_company' => true,
         ]));
     }
 }

@@ -17,11 +17,5 @@ class ValidateCompanyDeletion
     public function validate($user, $company)
     {
         Gate::forUser($user)->authorize('delete', $company);
-
-        if ($company->personal_company) {
-            throw ValidationException::withMessages([
-                'company' => __('You may not delete your personal company.'),
-            ])->errorBag('deleteCompany');
-        }
     }
 }

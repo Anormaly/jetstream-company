@@ -25,9 +25,6 @@ trait HasCompanies
      */
     public function currentCompany()
     {
-        if (is_null($this->current_company_id) && $this->id) {
-            $this->switchCompany($this->personalCompany());
-        }
 
         return $this->belongsTo(Jetstream::companyModel(), 'current_company_id');
     }
@@ -84,16 +81,6 @@ trait HasCompanies
                         ->withPivot('role')
                         ->withTimestamps()
                         ->as('membership');
-    }
-
-    /**
-     * Get the user's "personal" company.
-     *
-     * @return \App\Models\Company
-     */
-    public function personalCompany()
-    {
-        return $this->ownedCompanies->where('personal_company', true)->first();
     }
 
     /**

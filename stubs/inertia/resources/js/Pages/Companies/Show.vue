@@ -15,7 +15,7 @@
                             :available-roles="availableRoles"
                             :user-permissions="permissions" />
 
-                <template v-if="permissions.canDeleteCompany && ! company.personal_company">
+                <template v-if="permissions.canDeleteCompany">
                     <jet-section-border />
 
                     <delete-company-form class="mt-10 sm:mt-0" :company="company" />
