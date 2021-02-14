@@ -1,16 +1,16 @@
 {
-    "name": "laravel/jetstream",
-    "description": "Tailwind scaffolding for the Laravel framework.",
+    "name": "anormaly/jetstream-company",
+    "description": "Just Laravel Jetstream with companies instead of teams.",
     "keywords": ["laravel", "tailwind", "auth"],
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/laravel/jetstream/issues",
-        "source": "https://github.com/laravel/jetstream"
+        "issues": "https://github.com/knightkill/jetstream-company/issues",
+        "source": "https://github.com/knightkill/jetstream-company"
     },
     "authors": [
         {
-            "name": "Taylor Otwell",
-            "email": "taylor@laravel.com"
+            "name": "Hardip Patel",
+            "email": "hardip@anormaly.com"
         }
     ],
     "require": {
