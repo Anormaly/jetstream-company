@@ -18,7 +18,7 @@ class Company extends JetstreamCompany
      * @var array
      */
     protected $casts = [
-        'personal_company' => 'boolean',
+
     ];
 
     /**
