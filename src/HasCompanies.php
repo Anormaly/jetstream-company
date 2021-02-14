@@ -10,12 +10,15 @@ trait HasCompanies
     /**
      * Determine if the given company is the current company.
      *
-     * @param  mixed  $company
+     * @param mixed $company
      * @return bool
      */
     public function isCurrentCompany($company)
     {
-        return $company->id === $this->currentCompany->id;
+        if ($this->currentCompany)
+            return $company->id === $this->currentCompany->id;
+        else
+            return false;
     }
 
     /**
@@ -31,12 +34,12 @@ trait HasCompanies
     /**
      * Switch the user's context to the given company.
      *
-     * @param  mixed  $company
+     * @param mixed $company
      * @return bool
      */
     public function switchCompany($company)
     {
-        if (! $this->belongsToCompany($company)) {
+        if (!$this->belongsToCompany($company)) {
             return false;
         }
 
@@ -77,15 +80,15 @@ trait HasCompanies
     public function companies()
     {
         return $this->belongsToMany(Jetstream::companyModel(), Jetstream::membershipModel())
-                        ->withPivot('role')
-                        ->withTimestamps()
-                        ->as('membership');
+            ->withPivot('role')
+            ->withTimestamps()
+            ->as('membership');
     }
 
     /**
      * Determine if the user owns the given company.
      *
-     * @param  mixed  $company
+     * @param mixed $company
      * @return bool
      */
     public function ownsCompany($company)
@@ -96,20 +99,20 @@ trait HasCompanies
     /**
      * Determine if the user belongs to the given company.
      *
-     * @param  mixed  $company
+     * @param mixed $company
      * @return bool
      */
     public function belongsToCompany($company)
     {
         return $this->companies->contains(function ($t) use ($company) {
-            return $t->id === $company->id;
-        }) || $this->ownsCompany($company);
+                return $t->id === $company->id;
+            }) || $this->ownsCompany($company);
     }
 
     /**
      * Get the role that the user has on the company.
      *
-     * @param  mixed  $company
+     * @param mixed $company
      * @return \Laravel\Jetstream\Role
      */
     public function companyRole($company)
@@ -118,7 +121,7 @@ trait HasCompanies
             return new OwnerRole;
         }
 
-        if (! $this->belongsToCompany($company)) {
+        if (!$this->belongsToCompany($company)) {
             return;
         }
 
@@ -130,8 +133,8 @@ trait HasCompanies
     /**
      * Determine if the user has the given role on the given company.
      *
-     * @param  mixed  $company
-     * @param  string  $role
+     * @param mixed $company
+     * @param string $role
      * @return bool
      */
     public function hasCompanyRole($company, string $role)
@@ -141,14 +144,14 @@ trait HasCompanies
         }
 
         return $this->belongsToCompany($company) && optional(Jetstream::findRole($company->users->where(
-            'id', $this->id
-        )->first()->membership->role))->key === $role;
+                'id', $this->id
+            )->first()->membership->role))->key === $role;
     }
 
     /**
      * Get the user's permissions for the given company.
      *
-     * @param  mixed  $company
+     * @param mixed $company
      * @return array
      */
     public function companyPermissions($company)
@@ -157,7 +160,7 @@ trait HasCompanies
             return ['*'];
         }
 
-        if (! $this->belongsToCompany($company)) {
+        if (!$this->belongsToCompany($company)) {
             return [];
         }
 
@@ -167,8 +170,8 @@ trait HasCompanies
     /**
      * Determine if the user has the given permission on the given company.
      *
-     * @param  mixed  $company
-     * @param  string  $permission
+     * @param mixed $company
+     * @param string $permission
      * @return bool
      */
     public function hasCompanyPermission($company, string $permission)
@@ -177,12 +180,12 @@ trait HasCompanies
             return true;
         }
 
-        if (! $this->belongsToCompany($company)) {
+        if (!$this->belongsToCompany($company)) {
             return false;
         }
 
         if (in_array(HasApiTokens::class, class_uses_recursive($this)) &&
-            ! $this->tokenCan($permission) &&
+            !$this->tokenCan($permission) &&
             $this->currentAccessToken() !== null) {
             return false;
         }
@@ -190,8 +193,8 @@ trait HasCompanies
         $permissions = $this->companyPermissions($company);
 
         return in_array($permission, $permissions) ||
-               in_array('*', $permissions) ||
-               (Str::endsWith($permission, ':create') && in_array('*:create', $permissions)) ||
-               (Str::endsWith($permission, ':update') && in_array('*:update', $permissions));
+            in_array('*', $permissions) ||
+            (Str::endsWith($permission, ':create') && in_array('*:create', $permissions)) ||
+            (Str::endsWith($permission, ':update') && in_array('*:update', $permissions));
     }
 }
