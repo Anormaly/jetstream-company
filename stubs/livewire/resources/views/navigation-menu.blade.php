@@ -67,7 +67,7 @@
                                     <div class="border-t border-gray-100"></div>
 
                                     <!-- Company Switcher -->
-                                    @if(Auth::user()->currentCompany!=null)
+                                    @if(count(Auth::user()->allCompanies())>0)
                                         <div class="block px-4 py-2 text-xs text-gray-400">
                                             {{ __('Switch Companies') }}
                                         </div>
