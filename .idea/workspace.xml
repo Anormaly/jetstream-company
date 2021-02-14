@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10b8f587-f1a8-4c56-a7cd-897280c1336b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/company.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/company.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_21_100000_create_companies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_21_100000_create_companies_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Actions/ValidateCompanyDeletion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions/ValidateCompanyDeletion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Company.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HasCompanies.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/HasCompanies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/app/Actions/Fortify/CreateNewUserWithCompanies.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/app/Actions/Fortify/CreateNewUserWithCompanies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/app/Actions/Jetstream/CreateCompany.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/app/Actions/Jetstream/CreateCompany.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/app/Models/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/app/Models/Company.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/inertia/resources/js/Layouts/AppLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/inertia/resources/js/Layouts/AppLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/inertia/resources/js/Pages/Companies/Show.vue" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/inertia/resources/js/Pages/Companies/Show.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/livewire/resources/views/companies/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/livewire/resources/views/companies/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stubs/livewire/resources/views/navigation-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/livewire/resources/views/navigation-menu.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +14,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -175,6 +164,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -183,7 +178,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613285734234</updated>
-      <workItem from="1613285737337" duration="11040000" />
+      <workItem from="1613285737337" duration="11278000" />
+      <workItem from="1613302597312" duration="28000" />
     </task>
     <servers />
   </component>
@@ -200,5 +196,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

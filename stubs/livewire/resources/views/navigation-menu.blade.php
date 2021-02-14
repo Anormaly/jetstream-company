@@ -20,7 +20,7 @@
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <!-- Companies Dropdown -->
-                @if (Laravel\Jetstream\Jetstream::hasCompanyFeatures() && Auth::suer()->currentCompany!=null)
+                @if (Laravel\Jetstream\Jetstream::hasCompanyFeatures() && Auth::user()->currentCompany!=null)
                     <div class="ml-3 relative">
                         <x-jet-dropdown align="right" width="60">
                             <x-slot name="trigger">
@@ -182,7 +182,7 @@
                 </form>
 
                 <!-- Company Management -->
-                @if (Laravel\Jetstream\Jetstream::hasCompanyFeatures() && Auth::suer()->currentCompany!=null)
+                @if (Laravel\Jetstream\Jetstream::hasCompanyFeatures() && Auth::user()->currentCompany!=null)
                     <div class="border-t border-gray-200"></div>
 
                     <div class="block px-4 py-2 text-xs text-gray-400">
