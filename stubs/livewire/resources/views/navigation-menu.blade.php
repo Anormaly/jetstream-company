@@ -208,7 +208,7 @@
                 </form>
 
                 <!-- Company Management -->
-                @if (Laravel\Jetstream\Jetstream::hasCompanyFeatures() && Auth::user()->currentCompany!=null)
+                @if (Laravel\Jetstream\Jetstream::hasCompanyFeatures())
                     <div class="border-t border-gray-200"></div>
 
                     <div class="block px-4 py-2 text-xs text-gray-400">
@@ -216,28 +216,31 @@
                     </div>
 
                     <!-- Company Settings -->
-                    <x-jet-responsive-nav-link href="{{ route('companies.show', Auth::user()->currentCompany->id) }}"
-                                               :active="request()->routeIs('companies.show')">
-                        {{ __('Company Settings') }}
-                    </x-jet-responsive-nav-link>
-
+                    @if(Auth::user()->currentCompany!=null)
+                        <x-jet-responsive-nav-link
+                            href="{{ route('companies.show', Auth::user()->currentCompany->id) }}"
+                            :active="request()->routeIs('companies.show')">
+                            {{ __('Company Settings') }}
+                        </x-jet-responsive-nav-link>
+                    @endif
                     @can('create', Laravel\Jetstream\Jetstream::newCompanyModel())
                         <x-jet-responsive-nav-link href="{{ route('companies.create') }}"
                                                    :active="request()->routeIs('companies.create')">
                             {{ __('Create New Company') }}
                         </x-jet-responsive-nav-link>
                     @endcan
+                    @if(Auth::user()->currentCompany!=null)
+                        <div class="border-t border-gray-200"></div>
 
-                    <div class="border-t border-gray-200"></div>
+                        <!-- Company Switcher -->
+                        <div class="block px-4 py-2 text-xs text-gray-400">
+                            {{ __('Switch Companies') }}
+                        </div>
 
-                    <!-- Company Switcher -->
-                    <div class="block px-4 py-2 text-xs text-gray-400">
-                        {{ __('Switch Companies') }}
-                    </div>
-
-                    @foreach (Auth::user()->allCompanies() as $company)
-                        <x-jet-switchable-company :company="$company" component="jet-responsive-nav-link"/>
-                    @endforeach
+                        @foreach (Auth::user()->allCompanies() as $company)
+                            <x-jet-switchable-company :company="$company" component="jet-responsive-nav-link"/>
+                        @endforeach
+                    @endif
                 @endif
             </div>
         </div>
