@@ -93,6 +93,12 @@ abstract class Company extends Model
      */
     public function removeUser($user)
     {
+        if ($user->current_company_id === $this->id) {
+            $user->forceFill([
+                'current_company_id' => null,
+            ])->save();
+        }
+
         $this->users()->detach($user);
     }
 
@@ -103,6 +109,12 @@ abstract class Company extends Model
      */
     public function purge()
     {
+        $this->owner()->where('current_company_id', $this->id)
+                ->update(['current_company_id' => null]);
+
+        $this->users()->where('current_company_id', $this->id)
+                ->update(['current_company_id' => null]);
+
         $this->users()->detach();
 
         $this->delete();

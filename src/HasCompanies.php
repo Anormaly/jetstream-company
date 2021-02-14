@@ -25,7 +25,6 @@ trait HasCompanies
      */
     public function currentCompany()
     {
-
         return $this->belongsTo(Jetstream::companyModel(), 'current_company_id');
     }
 
