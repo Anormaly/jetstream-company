@@ -1,13 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Laravel\Jetstream\Http\Controllers\CurrentTeamController;
+use Laravel\Jetstream\Http\Controllers\CurrentCompanyController;
 use Laravel\Jetstream\Http\Controllers\Livewire\ApiTokenController;
 use Laravel\Jetstream\Http\Controllers\Livewire\PrivacyPolicyController;
-use Laravel\Jetstream\Http\Controllers\Livewire\TeamController;
+use Laravel\Jetstream\Http\Controllers\Livewire\CompanyController;
 use Laravel\Jetstream\Http\Controllers\Livewire\TermsOfServiceController;
 use Laravel\Jetstream\Http\Controllers\Livewire\UserProfileController;
-use Laravel\Jetstream\Http\Controllers\TeamInvitationController;
+use Laravel\Jetstream\Http\Controllers\CompanyInvitationController;
 use Laravel\Jetstream\Jetstream;
 
 Route::group(['middleware' => config('jetstream.middleware', ['web'])], function () {
@@ -26,15 +26,15 @@ Route::group(['middleware' => config('jetstream.middleware', ['web'])], function
             Route::get('/user/api-tokens', [ApiTokenController::class, 'index'])->name('api-tokens.index');
         }
 
-        // Teams...
-        if (Jetstream::hasTeamFeatures()) {
-            Route::get('/teams/create', [TeamController::class, 'create'])->name('teams.create');
-            Route::get('/teams/{team}', [TeamController::class, 'show'])->name('teams.show');
-            Route::put('/current-team', [CurrentTeamController::class, 'update'])->name('current-team.update');
+        // Companies...
+        if (Jetstream::hasCompanyFeatures()) {
+            Route::get('/companies/create', [CompanyController::class, 'create'])->name('companies.create');
+            Route::get('/companies/{company}', [CompanyController::class, 'show'])->name('companies.show');
+            Route::put('/current-company', [CurrentCompanyController::class, 'update'])->name('current-company.update');
 
-            Route::get('/team-invitations/{invitation}', [TeamInvitationController::class, 'accept'])
+            Route::get('/company-invitations/{invitation}', [CompanyInvitationController::class, 'accept'])
                         ->middleware(['signed'])
-                        ->name('team-invitations.accept');
+                        ->name('company-invitations.accept');
         }
     });
 });

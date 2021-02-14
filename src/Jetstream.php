@@ -3,13 +3,13 @@
 namespace Laravel\Jetstream;
 
 use Illuminate\Support\Arr;
-use Laravel\Jetstream\Contracts\AddsTeamMembers;
-use Laravel\Jetstream\Contracts\CreatesTeams;
-use Laravel\Jetstream\Contracts\DeletesTeams;
+use Laravel\Jetstream\Contracts\AddsCompanyMembers;
+use Laravel\Jetstream\Contracts\CreatesCompanies;
+use Laravel\Jetstream\Contracts\DeletesCompanies;
 use Laravel\Jetstream\Contracts\DeletesUsers;
-use Laravel\Jetstream\Contracts\InvitesTeamMembers;
-use Laravel\Jetstream\Contracts\RemovesTeamMembers;
-use Laravel\Jetstream\Contracts\UpdatesTeamNames;
+use Laravel\Jetstream\Contracts\InvitesCompanyMembers;
+use Laravel\Jetstream\Contracts\RemovesCompanyMembers;
+use Laravel\Jetstream\Contracts\UpdatesCompanyNames;
 
 class Jetstream
 {
@@ -49,11 +49,11 @@ class Jetstream
     public static $userModel = 'App\\Models\\User';
 
     /**
-     * The team model that should be used by Jetstream.
+     * The company model that should be used by Jetstream.
      *
      * @var string
      */
-    public static $teamModel = 'App\\Models\\Team';
+    public static $companyModel = 'App\\Models\\Company';
 
     /**
      * The membership model that should be used by Jetstream.
@@ -63,11 +63,11 @@ class Jetstream
     public static $membershipModel = 'App\\Models\\Membership';
 
     /**
-     * The team invitation model that should be used by Jetstream.
+     * The company invitation model that should be used by Jetstream.
      *
      * @var string
      */
-    public static $teamInvitationModel = 'App\\Models\\TeamInvitation';
+    public static $companyInvitationModel = 'App\\Models\\CompanyInvitation';
 
     /**
      * The Inertia manager instance.
@@ -186,13 +186,13 @@ class Jetstream
     }
 
     /**
-     * Determine if Jetstream is supporting team features.
+     * Determine if Jetstream is supporting company features.
      *
      * @return bool
      */
-    public static function hasTeamFeatures()
+    public static function hasCompanyFeatures()
     {
-        return Features::hasTeamFeatures();
+        return Features::hasCompanyFeatures();
     }
 
     /**
@@ -273,36 +273,36 @@ class Jetstream
     }
 
     /**
-     * Get the name of the team model used by the application.
+     * Get the name of the company model used by the application.
      *
      * @return string
      */
-    public static function teamModel()
+    public static function companyModel()
     {
-        return static::$teamModel;
+        return static::$companyModel;
     }
 
     /**
-     * Get a new instance of the team model.
+     * Get a new instance of the company model.
      *
      * @return mixed
      */
-    public static function newTeamModel()
+    public static function newCompanyModel()
     {
-        $model = static::teamModel();
+        $model = static::companyModel();
 
         return new $model;
     }
 
     /**
-     * Specify the team model that should be used by Jetstream.
+     * Specify the company model that should be used by Jetstream.
      *
      * @param  string  $model
      * @return static
      */
-    public static function useTeamModel(string $model)
+    public static function useCompanyModel(string $model)
     {
-        static::$teamModel = $model;
+        static::$companyModel = $model;
 
         return new static;
     }
@@ -331,92 +331,92 @@ class Jetstream
     }
 
     /**
-     * Get the name of the team invitation model used by the application.
+     * Get the name of the company invitation model used by the application.
      *
      * @return string
      */
-    public static function teamInvitationModel()
+    public static function companyInvitationModel()
     {
-        return static::$teamInvitationModel;
+        return static::$companyInvitationModel;
     }
 
     /**
-     * Specify the team invitation model that should be used by Jetstream.
+     * Specify the company invitation model that should be used by Jetstream.
      *
      * @param  string  $model
      * @return static
      */
-    public static function useTeamInvitationModel(string $model)
+    public static function useCompanyInvitationModel(string $model)
     {
-        static::$teamInvitationModel = $model;
+        static::$companyInvitationModel = $model;
 
         return new static;
     }
 
     /**
-     * Register a class / callback that should be used to create teams.
+     * Register a class / callback that should be used to create companies.
      *
      * @param  string  $class
      * @return void
      */
-    public static function createTeamsUsing(string $class)
+    public static function createCompaniesUsing(string $class)
     {
-        return app()->singleton(CreatesTeams::class, $class);
+        return app()->singleton(CreatesCompanies::class, $class);
     }
 
     /**
-     * Register a class / callback that should be used to update team names.
+     * Register a class / callback that should be used to update company names.
      *
      * @param  string  $class
      * @return void
      */
-    public static function updateTeamNamesUsing(string $class)
+    public static function updateCompanyNamesUsing(string $class)
     {
-        return app()->singleton(UpdatesTeamNames::class, $class);
+        return app()->singleton(UpdatesCompanyNames::class, $class);
     }
 
     /**
-     * Register a class / callback that should be used to add team members.
+     * Register a class / callback that should be used to add company members.
      *
      * @param  string  $class
      * @return void
      */
-    public static function addTeamMembersUsing(string $class)
+    public static function addCompanyMembersUsing(string $class)
     {
-        return app()->singleton(AddsTeamMembers::class, $class);
+        return app()->singleton(AddsCompanyMembers::class, $class);
     }
 
     /**
-     * Register a class / callback that should be used to add team members.
+     * Register a class / callback that should be used to add company members.
      *
      * @param  string  $class
      * @return void
      */
-    public static function inviteTeamMembersUsing(string $class)
+    public static function inviteCompanyMembersUsing(string $class)
     {
-        return app()->singleton(InvitesTeamMembers::class, $class);
+        return app()->singleton(InvitesCompanyMembers::class, $class);
     }
 
     /**
-     * Register a class / callback that should be used to remove team members.
+     * Register a class / callback that should be used to remove company members.
      *
      * @param  string  $class
      * @return void
      */
-    public static function removeTeamMembersUsing(string $class)
+    public static function removeCompanyMembersUsing(string $class)
     {
-        return app()->singleton(RemovesTeamMembers::class, $class);
+        return app()->singleton(RemovesCompanyMembers::class, $class);
     }
 
     /**
-     * Register a class / callback that should be used to delete teams.
+     * Register a class / callback that should be used to delete companies.
      *
      * @param  string  $class
      * @return void
      */
-    public static function deleteTeamsUsing(string $class)
+    public static function deleteCompaniesUsing(string $class)
     {
-        return app()->singleton(DeletesTeams::class, $class);
+        return app()->singleton(DeletesCompanies::class, $class);
     }
 
     /**

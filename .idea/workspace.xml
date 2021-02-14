@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="10b8f587-f1a8-4c56-a7cd-897280c1336b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/HasCompanies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Http/Controllers/Inertia/CompanyController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Http/Livewire/CompanyMemberManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Http/Livewire/DeleteCompanyForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/app/Actions/Jetstream/AddCompanyMember.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/app/Actions/Jetstream/DeleteCompany.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/app/Actions/Jetstream/InviteCompanyMember.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/app/Actions/Jetstream/RemoveCompanyMember.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/app/Actions/Jetstream/UpdateCompanyName.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/livewire/resources/views/companies/delete-company-form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/tests/inertia/CreateCompanyTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/tests/inertia/DeleteCompanyTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/tests/inertia/InviteCompanyMemberTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/tests/inertia/LeaveCompanyTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/tests/inertia/RemoveCompanyMemberTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/tests/inertia/UpdateCompanyMemberRoleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/tests/inertia/UpdateCompanyNameTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/tests/livewire/CreateCompanyTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/tests/livewire/DeleteCompanyTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/tests/livewire/InviteCompanyMemberTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/tests/livewire/LeaveCompanyTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/tests/livewire/RemoveCompanyMemberTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/tests/livewire/UpdateCompanyMemberRoleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stubs/tests/livewire/UpdateCompanyNameTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/AddCompanyMemberTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/CompanyBehaviorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/DeleteCompanyTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/InviteCompanyMemberTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/RemoveCompanyMemberTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/1_Bug_report.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/1_Bug_report.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UPGRADE.md" beforeDir="false" afterPath="$PROJECT_DIR$/UPGRADE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/TeamFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CompanyFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_21_100000_create_teams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_21_100000_create_companies_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_21_200000_create_team_user_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_21_300000_create_team_invitations_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/switchable-team.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mail/team-invitation.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/inertia.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/inertia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/livewire.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/livewire.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Actions/UpdateTeamMemberRole.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Actions/ValidateTeamDeletion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console/InstallCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/InstallCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contracts/AddsTeamMembers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contracts/CreatesTeams.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contracts/DeletesTeams.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contracts/InvitesTeamMembers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contracts/RemovesTeamMembers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contracts/UpdatesTeamNames.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/AddingTeam.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/AddingTeamMember.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/InvitingTeamMember.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/RemovingTeamMember.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/TeamCreated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/TeamDeleted.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/TeamEvent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/TeamMemberAdded.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/TeamMemberRemoved.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/TeamMemberUpdated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/TeamUpdated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Features.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Features.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HasTeams.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Http/Controllers/CurrentTeamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Controllers/CurrentCompanyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Http/Controllers/Inertia/TeamController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Http/Controllers/Inertia/TeamMemberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Controllers/Inertia/CompanyMemberController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Http/Controllers/Livewire/TeamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Controllers/Livewire/CompanyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Http/Controllers/TeamInvitationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Controllers/CompanyInvitationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Http/Livewire/CreateTeamForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Livewire/CreateCompanyForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Http/Livewire/DeleteTeamForm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Http/Livewire/TeamMemberManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Http/Livewire/UpdateTeamNameForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Livewire/UpdateCompanyNameForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Http/Middleware/ShareInertiaData.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/Middleware/ShareInertiaData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Jetstream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JetstreamServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/JetstreamServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mail/TeamInvitation.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mail/CompanyInvitation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Membership.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Membership.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Team.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TeamInvitation.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompanyInvitation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/app/Actions/Fortify/CreateNewUserWithTeams.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/app/Actions/Fortify/CreateNewUserWithCompanies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/app/Actions/Jetstream/AddTeamMember.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/app/Actions/Jetstream/CreateTeam.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/app/Actions/Jetstream/CreateCompany.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/app/Actions/Jetstream/DeleteTeam.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/app/Actions/Jetstream/DeleteUserWithTeams.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/app/Actions/Jetstream/DeleteUserWithCompanies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/app/Actions/Jetstream/InviteTeamMember.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/app/Actions/Jetstream/RemoveTeamMember.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/app/Actions/Jetstream/UpdateTeamName.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/app/Models/Team.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/app/Models/Company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/app/Models/TeamInvitation.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/app/Models/CompanyInvitation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/app/Models/UserWithTeams.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/app/Models/UserWithCompanies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/app/Policies/TeamPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/app/Policies/CompanyPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/app/Providers/JetstreamWithTeamsServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/app/Providers/JetstreamWithCompaniesServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/inertia/resources/js/Layouts/AppLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/inertia/resources/js/Layouts/AppLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/inertia/resources/js/Pages/Teams/Create.vue" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/inertia/resources/js/Pages/Companies/Create.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/inertia/resources/js/Pages/Teams/CreateTeamForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/inertia/resources/js/Pages/Companies/CreateCompanyForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/inertia/resources/js/Pages/Teams/DeleteTeamForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/inertia/resources/js/Pages/Companies/DeleteCompanyForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/inertia/resources/js/Pages/Teams/Show.vue" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/inertia/resources/js/Pages/Companies/Show.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/inertia/resources/js/Pages/Teams/TeamMemberManager.vue" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/inertia/resources/js/Pages/Companies/CompanyMemberManager.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/inertia/resources/js/Pages/Teams/UpdateTeamNameForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/inertia/resources/js/Pages/Companies/UpdateCompanyNameForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/livewire/resources/views/navigation-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/livewire/resources/views/navigation-menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/livewire/resources/views/teams/create-team-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/livewire/resources/views/companies/create-company-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/livewire/resources/views/teams/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/livewire/resources/views/companies/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/livewire/resources/views/teams/delete-team-form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/livewire/resources/views/teams/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/livewire/resources/views/companies/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/livewire/resources/views/teams/team-member-manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/livewire/resources/views/companies/company-member-manager.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/livewire/resources/views/teams/update-team-name-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/livewire/resources/views/companies/update-company-name-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/PasswordConfirmationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/tests/PasswordConfirmationTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/inertia/ApiTokenPermissionsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/tests/inertia/ApiTokenPermissionsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/inertia/CreateApiTokenTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/tests/inertia/CreateApiTokenTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/inertia/CreateTeamTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/inertia/DeleteApiTokenTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/tests/inertia/DeleteApiTokenTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/inertia/DeleteTeamTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/inertia/InviteTeamMemberTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/inertia/LeaveTeamTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/inertia/RemoveTeamMemberTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/inertia/UpdateTeamMemberRoleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/inertia/UpdateTeamNameTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/livewire/ApiTokenPermissionsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/tests/livewire/ApiTokenPermissionsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/livewire/CreateApiTokenTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/tests/livewire/CreateApiTokenTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/livewire/CreateTeamTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/livewire/DeleteApiTokenTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/tests/livewire/DeleteApiTokenTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/livewire/DeleteTeamTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/livewire/InviteTeamMemberTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/livewire/LeaveTeamTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/livewire/RemoveTeamMemberTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/livewire/UpdateTeamMemberRoleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/tests/livewire/UpdateTeamNameTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/AddTeamMemberTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CreateTeamTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CreateCompanyTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CurrentTeamControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CurrentCompanyControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/DeleteTeamTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/DeleteUserWithTeamsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/DeleteUserWithCompaniesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Fixtures/TeamPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Fixtures/CompanyPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Fixtures/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Fixtures/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/InviteTeamMemberTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/RemoveTeamMemberTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TeamBehaviorTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TeamInvitationControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CompanyInvitationControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TeamMemberControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CompanyMemberControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/UpdateTeamTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/UpdateCompanyTest.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
+  <component name="ProjectId" id="1oSh7lMoSIdpb3ya3usuwMBrAfS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10b8f587-f1a8-4c56-a7cd-897280c1336b" name="Default Changelist" comment="" />
+      <created>1613285734234</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613285734234</updated>
+      <workItem from="1613285737337" duration="3707000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
