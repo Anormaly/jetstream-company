@@ -64,10 +64,10 @@
                                         </x-jet-dropdown-link>
                                     @endcan
 
-                                    <div class="border-t border-gray-100"></div>
-
-                                    <!-- Company Switcher -->
                                     @if(count(Auth::user()->allCompanies())>0)
+                                        <div class="border-t border-gray-100"></div>
+
+                                        <!-- Company Switcher -->
                                         <div class="block px-4 py-2 text-xs text-gray-400">
                                             {{ __('Switch Companies') }}
                                         </div>
