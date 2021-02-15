@@ -32,7 +32,7 @@ class UpdateCompanyNameForm extends Component
     {
         $this->company = $company;
 
-        $this->state = ['name' => $company->name];
+        $this->state = $company->withoutRelations()->toArray();
     }
 
     /**
